@@ -1,0 +1,156 @@
+.container {
+  display: flex;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 30px;
+  box-shadow: 0px 2px 12px gray;
+
+  p {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .categories {
+    display: flex;
+    gap: 25px;
+
+
+    a {
+      color: #5d5d5d;
+      transition: .3s;
+      font-size: 17.5px;
+
+      &:hover {
+        color: #1c1c1c;
+        transform: scale(1.02);
+      }
+    }
+
+    .a-active {
+      border-bottom: 2px solid #000;
+      color: #000;
+      transform: scale(1.01);
+    }
+
+  }
+
+
+  .dark-mode {
+    display: flex;
+    gap: 20px;
+
+    span {
+      background-color: gray;
+      width: 60px;
+      height: 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background-color: #292828;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      height: 32px;
+      border-radius: 50%;
+      width: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0px 7px gray;
+      cursor: pointer;
+      transition: .4s;
+
+
+      img {
+        height: 20px;
+      }
+    }
+  }
+}
+
+.dark {
+  transition: .4s;
+
+  .container {
+    display: flex;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 30px;
+    box-shadow: 0px 2px 16px #000;
+
+    p {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .categories {
+      display: flex;
+      gap: 25px;
+
+
+      a {
+        color: rgb(172, 172, 172);
+        transition: .3s;
+        font-size: 17.5px;
+
+        &:hover {
+          color: #fff;
+          transform: scale(1.02);
+        }
+      }
+
+      .a-active {
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        transform: scale(1.01);
+      }
+    }
+
+    .dark-mode {
+      display: flex;
+      gap: 20px;
+
+      span {
+        background-color: #fff;
+        width: 60px;
+        height: 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: rgb(30, 30, 234);
+      }
+
+      button {
+        border: none;
+        outline: none;
+        height: 32px;
+        border-radius: 50%;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        transform: translateX(45%);
+        box-shadow: 0px 0px 7px gray;
+        cursor: pointer;
+        justify-content: center;
+        transition: .4s;
+
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,263 @@
+.container-shoes {
+  width: 90vw;
+  margin-top: -25px;
+  height: 90vh;
+  padding: 90px;
+  display: flex;
+  align-items: center;
+  animation: prohibited .6s;
+  
+
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #prev {
+    height: 52px;
+    width: 55px;
+    border-radius: 50%;
+    transform: scale(-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 13px gray;
+    cursor: pointer;
+    z-index: 1;
+    transition: .3s;
+
+    &:hover{
+      background-color: #beff1b;
+      box-shadow: 0px 0px 10px #beff1b;
+    }
+
+    img {
+      width: 20px;
+    }
+
+    ;
+  }
+
+  #next {
+    height: 52px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(30%);
+    box-shadow: 0px 0px 13px gray;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover{
+      background-color: #beff1b;
+      box-shadow: 0px 0px 10px #beff1b;
+    }
+
+
+    img {
+      width: 20px;
+    }
+
+    ;
+  }
+
+  .items-cell {
+    width: 100%;
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+    right: 0;
+    transform: translateX(100vw);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+
+    .img-shoes {
+
+      img {
+        padding: 5px;
+        transition: .5s;
+        width: 390px;
+        transform: rotate(0);
+        filter: drop-shadow(0px 7px 18px rgb(68, 68, 68));
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p {
+      font-size: 13px;
+    }
+
+    h2 {
+      font-size: 60px;
+      font-family: "League Gothic", sans-serif;
+    }
+
+    .infos {
+      height: 40px;
+      width: 80px;
+      border-radius: 12px;
+      background-color: #beff1b;
+      font-size: 16px;
+      transition: .3s;
+      right: 0px;
+      transform: translateX(300%);
+      font-family: "League Gothic", sans-serif;
+
+      &:hover {
+        box-shadow: 0px 0px 12px #beff1b;
+      }
+    }
+  }
+
+  .active-cell {
+    position: relative;
+    transition: .4s;
+    transform: translateX(15%);
+    margin: 10px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    animation: prohibited .6s;
+
+    .img-shoes {
+
+      img {
+        padding: 5px;
+        width: 370px;
+        transform: rotate(-10deg);
+        filter: drop-shadow(0px 7px 18px #000000d2);
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      p {
+        font-size: 13px;
+      }
+
+      h2 {
+        transform: translateX(25%);
+        font-size: 60px;
+        font-family: "League Gothic", sans-serif;
+      }
+
+      .infos {
+        height: 40px;
+        width: 80px;
+        border-radius: 12px;
+        background-color: #beff1b;
+        font-size: 16px;
+        transition: .3s;
+        right: 0px;
+        transform: translateX(300%);
+        font-family: "League Gothic", sans-serif;
+
+        &:hover {
+          box-shadow: 0px 0px 12px #beff1b;
+        }
+      }
+    }
+  }
+
+  .img-diferection{
+    transform: rotate(-20%);
+  }
+}
+
+
+
+
+
+
+
+.dark {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    p {
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    .infos {
+      height: 55px;
+      width: 120px;
+      border-radius: 12px;
+      background-color: #beff1b;
+      font-size: 16px;
+      transition: .3s;
+
+      &:hover {
+        box-shadow: 0px 0px 12px #beff1b;
+      }
+    }
+  }
+
+  .active {
+    position: relative;
+    transition: .4s;
+    transform: translateX(-5%);
+    margin: 10px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 15px;
+    animation: prohibited .6s;
+
+    .img-shoes {
+
+      img {
+        width: 650px;
+        transform: rotate(-30deg);
+        border-radius: 100%;
+        filter: drop-shadow(0px 7px 18px #000000d2);
+      }
+    }
+  }
+
+
+}
+
+@keyframes prohibited {
+  0%{
+    opacity: 10%;
+  }
+
+  20%{
+    opacity: 30%;
+  }
+
+  50%{
+    opacity: 50%;
+  }
+
+  70%{
+    opacity: 70%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.dark {
+  transition: .4s;
+  background: linear-gradient(90deg, rgb(1, 1, 33), rgb(21, 21, 78));
+  animation: prohibited .6s;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  transition: .4s;
+  animation: prohibited .6s;
+}
