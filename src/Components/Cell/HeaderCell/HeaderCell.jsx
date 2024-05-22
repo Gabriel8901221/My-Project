@@ -24,7 +24,7 @@ const HeaderCell = () => {
       <div className="categories">
         <Link to="/"><a >Tênis</a></Link>
         <Link to="/clocks"><a>Relogios</a></Link>
-        <Link to="/cell"><a className="a-active" >celulares</a></Link>
+        <Link to="/cell"><a className="a-active" >Celulares</a></Link>
         <Link to="/notebooks"><a  >Notebooks</a></Link>
       </div>
       <div className="dark-mode">

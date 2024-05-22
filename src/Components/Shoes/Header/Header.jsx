@@ -24,7 +24,7 @@ const Header = () => {
       <div className="categories">
         <Link to="/"><a className="a-active">Tênis</a></Link>
         <Link to="/clocks"><a>Relogios</a></Link>
-        <Link to="/cell"><a href="">celulares</a></Link>
+        <Link to="/cell"><a href="">Celulares</a></Link>
         <Link to="/notebooks"><a href="">Notebooks</a></Link>
       </div>
       <div className="dark-mode">
