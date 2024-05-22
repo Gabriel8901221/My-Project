@@ -23,7 +23,7 @@ const HeaderNote = () => {
       <p>Coder Marketing</p>
       <div className="categories">
         <Link to="/"><a >Tênis</a></Link>
-        <Link to="/clocks"><a>Relogios</a></Link>
+        <Link to="/clocks"><a>Relógios</a></Link>
         <Link to="/cell"><a>Celulares</a></Link>
         <Link to="/notebooks"><a className="a-active">Notebooks</a></Link>
       </div>

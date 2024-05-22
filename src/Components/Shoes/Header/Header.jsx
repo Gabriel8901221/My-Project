@@ -23,7 +23,7 @@ const Header = () => {
       <p>Coder Marketing</p>
       <div className="categories">
         <Link to="/"><a className="a-active">Tênis</a></Link>
-        <Link to="/clocks"><a>Relogios</a></Link>
+        <Link to="/clocks"><a>Relógios</a></Link>
         <Link to="/cell"><a href="">Celulares</a></Link>
         <Link to="/notebooks"><a href="">Notebooks</a></Link>
       </div>
